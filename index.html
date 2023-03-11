@@ -24,7 +24,11 @@
                     <li class="nav-item"><a class="nav-link" href="#">Темы</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
                 </ul>
+                <div class="burger"></div>
             </nav>
+            <a href="#" class="header-logo-mobile">
+                <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="logo"
+                    class="header-logo-mobile-img"></a>
             <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
     </header>
@@ -359,7 +363,13 @@
             <h2 class="title-aside">Наши изделия</h2>
             <section class="products">
                 <article class="product">
-                    <img src="img\shop-item-desk1.jpg" alt="Подушки на диван" class="product-img">
+                    <!-- <img src="img\shop-item-desk1.jpg" alt="Подушки на диван" class="product-img"> -->
+                    <picture class="product-img">
+                        <source media="(max-width: 640px)" srcset="img\shop-item-mobile1.jpg">
+                        <source media="(max-width: 1200px)" srcset="img\shop-item-tablet1.jpg">
+                        <source media="(min-width: 1201px)" srcset="img\shop-item-desk1.jpg">
+                        <img src="img\shop-item-desk1.jpg" alt="Подушки на диван">
+                    </picture>
                     <div class="product-info">
                         <h3 class="product-title">Подушки на диван</h3>
                         <div class="product-text">
@@ -382,7 +392,12 @@
                     </div>
                 </article>
                 <article class="product">
-                    <img src="img\shop-item-desk2.jpg" alt="Кукла Зайчик" class="product-img">
+                    <picture class="product-img">
+                        <source media="(max-width: 640px)" srcset="img\shop-item-mobile2.jpg">
+                        <source media="(max-width: 1200px)" srcset="img\shop-item-tablet2.jpg">
+                        <source media="(min-width: 1201px)" srcset="img\shop-item-desk2.jpg">
+                        <img src="img\shop-item-desk2.jpg" alt="Кукла Зайчик">
+                    </picture>
                     <div class="product-info">
                         <h3 class="product-title">Кукла "Зайчик"</h3>
                         <div class="product-text">
@@ -405,7 +420,13 @@
                     </div>
                 </article>
                 <article class="product">
-                    <img src="img\shop-item-desk3.jpg" alt="Подушки на диван" class="product-img">
+                    
+                    <picture class="product-img">
+                        <source media="(max-width: 640px)" srcset="img\shop-item-mobile3.jpg">
+                        <source media="(max-width: 1200px)" srcset="img\shop-item-tablet3.jpg">
+                        <source media="(min-width: 1201px)" srcset="img\shop-item-desk3.jpg">
+                        <img src="img\shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                    </picture>
                     <div class="product-info">
                         <h3 class="product-title">Шестиугольная рамка</h3>
                         <div class="product-text">
