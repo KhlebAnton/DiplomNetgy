@@ -185,6 +185,8 @@ h3 {
     margin: 1em;
     padding: 1em;
     border: 3px solid #b59f5b;
+    left: 0;
+    right: 0;
 }
 
 .trend-title-link {
@@ -778,6 +780,9 @@ h3 {
     .burger {
         display: none;
     }
+}
+
+@media (min-width: 641px) {
     .header-logo-mobile {
         display: none;
     }
@@ -868,17 +873,6 @@ h3 {
         flex-wrap: wrap;
     }
 
-    .trends-post {
-        width: 100%;
-        
-    }
-    .trends-post {
-        margin-bottom: 2px;
-    }
-    .trends-post:last-child {
-        margin: 0;
-    }
-
     .main-container {
         flex-direction: column;
     }
@@ -944,4 +938,30 @@ h3 {
         height: 45%;
     }
 
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .trends-post {
+        width: 100%;
+        
+    }
+    .trends-post {
+        margin-bottom: 2px;
+    }
+    .trends-post:last-child {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+
+    .trends-post {
+        width: calc(50% - 2px);
+        
+    }
+    .trends-post:nth-child(n + 3) {
+        margin-top: 4px;
+    }
 }
